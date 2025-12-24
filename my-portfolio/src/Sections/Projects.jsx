@@ -24,7 +24,7 @@ export default function Projects() {
     <section id="projects" className='bg-white  p-7 shadow rounded-2xl'>
       <h2 className="relative inline-block text-2xl font-bold mb-6 group">
         PROJECTS
-        <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
       </h2>
 
 
