@@ -4,7 +4,6 @@ import Projects from './Sections/Projects'
 import About from './Sections/About'
 import Contact from './Sections/Contact'
 import Footer from './components/Footer'
-import { useRef } from 'react'
 import Cursor from './Components/Cursor'
 import Lenis from 'lenis'
 
