@@ -1,4 +1,4 @@
-import Header from './components/Header'
+// import Header from './components/Header'
 import Hero from './Sections/Hero'
 import Projects from './Sections/Projects'
 import About from './Sections/About'
@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <Header />
+      {/* <Header /> */}
       <Cursor />
 
       <main className="max-w-5xl mx-auto p-6 space-y-16">
