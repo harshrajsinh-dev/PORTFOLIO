@@ -1,12 +1,11 @@
-import Header from './components/Header'
+import Header from './Components/Header'
 import Hero from './Sections/Hero'
 import Projects from './Sections/Projects'
 import About from './Sections/About'
 import Contact from './Sections/Contact'
-import Footer from './components/Footer'
+import Footer from './Components/Footer'
 import Cursor from './Components/Cursor'
 import Lenis from 'lenis'
-
 
 export default function App() {
   // Initialize Lenis
