@@ -16,7 +16,7 @@ const Cursor = () => {
         });
     });
     return (
-        <div ref={cursorRef} className='h-2 w-2 bg-black  rounded-full fixed top-0 left-0 z-50 pointer-events-none'
+        <div ref={cursorRef} className='hidden md:block h-2 w-2 bg-black  rounded-full fixed top-0 left-0 z-50 pointer-events-none'
             style={{
                 transform: "translate(-50%, -50%)",
             }}

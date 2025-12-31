@@ -20,6 +20,7 @@ export default function App() {
 
       <main className="max-w-5xl mx-auto p-6 space-y-16">
         <Hero />
+
         <Projects />
         <About />
         <Contact />
