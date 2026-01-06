@@ -1,30 +1,55 @@
 export default function About() {
   return (
-    <section id="about" className="p-2 scroll-mt-32 rounded-2xl shadow bg-white grid md:grid-cols-3 gap-6">
-      <div className="md:col-span-2">
+    <section
+      id="about"
+      className="scroll-mt-32 max-w-5xl mx-auto px-4 py-16"
+    >
+      {/* Heading */}
+      <h2 className="text-4xl font-semibold tracking-tight mb-4">
+        About
+      </h2>
 
-         <h2 className="p-2 relative inline-block text-2xl font-bold mb-6 group">
-          ABOUT
-       <span className="absolute left-0 bottom-1 h-[2px] w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-         </h2>
-        <p className="mt-4 text-slate-600">
-          I love building clean UI, scalable React apps.
-        </p>
-      </div>
+      <p className="text-slate-600 max-w-2xl mb-14">
+        I’m a full-stack developer focused on building reliable, scalable
+        web applications with clean architecture and thoughtful UX.
+      </p>
 
-      <aside className="bg-white p-4 rounded-xl shadow">
-        <h3 className="font-semibold">Skills</h3>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {['React', 'Tailwind', 'JS', 'Node'].map(skill => (
-            <span
-              key={skill}
-              className="text-xs bg-slate-100 px-2 py-1 rounded"
-            >
-              {skill}
-            </span>
-          ))}
+      {/* Skills */}
+      <div className="grid gap-10 md:grid-cols-3">
+        
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-wide mb-3">
+            Frontend
+          </h3>
+          <ul className="space-y-2 text-slate-600">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>Tailwind</li>
+          </ul>
         </div>
-      </aside>
+
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-wide mb-3">
+            Backend
+          </h3>
+          <ul className="space-y-2 text-slate-600">
+            <li>Node.js</li>
+            <li>Express</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-wide mb-3">
+            Tools & Infra
+          </h3>
+          <ul className="space-y-2 text-slate-600">
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+            <li>Vercel</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
   )
 }

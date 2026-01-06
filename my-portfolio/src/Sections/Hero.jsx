@@ -50,7 +50,7 @@ export default function Hero() {
       ref={sectionRef}
       id="home"
       className="scroll-mt-32 grid md:grid-cols-2 gap-8 items-center py-20"
-      
+
     >
       <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }}>
         <h2 className="text-4xl font-bold">
@@ -62,8 +62,10 @@ export default function Hero() {
         </p>
 
         <div className="mt-6 flex gap-3">
-          <button className=" outline-none group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-indigo-600 px-6 font-medium text-white duration-500">
-            <div className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">View projects</div>
+          <button className="outline-none group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-indigo-600 px-6 font-medium text-white duration-500">
+            <div className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">
+              View projects
+              </div>
             <div className="absolute translate-x-[150%] opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100">
               <img src={assets.arrowSvg} alt="" />
             </div></button>
