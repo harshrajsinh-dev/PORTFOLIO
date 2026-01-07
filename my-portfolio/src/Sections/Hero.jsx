@@ -70,7 +70,7 @@ export default function Hero() {
               <img src={assets.arrowSvg} alt="" />
             </div></button>
           <a
-            href="mailto:darkharshraj@gmail.com"
+            href="mailto:harshrajsinhgohil8626@gmail.com"
             className=" outline-none border px-4 py-2 rounded flex items-center gap-2 hover:bg-slate-700 hover:text-white transition"
           >
             <Mail size={14} />
