@@ -8,7 +8,12 @@ const ProjectCardGSAP = () => {
     const itemsRef = useRef([]);
     const defaultIndex = 0;
 
-    const images = Array(5).fill(assets.project_img1);
+    // const images = Array(3).fill(assets.project_img1);
+    const images = [
+        assets.project_img1,
+        assets.project_img1,
+        assets.project_img1
+    ];
 
     // 🔹 INITIAL STATE → first image open
     useEffect(() => {
@@ -45,7 +50,7 @@ const ProjectCardGSAP = () => {
 
     return (
         <div
-            className="w-[70%] mx-auto h-[260px] flex overflow-hidden rounded-2xl"
+            className="w-[90%] mx-auto h-[260px] flex overflow-hidden rounded-2xl"
             onMouseLeave={() => animateToIndex(defaultIndex)}
         >
             {images.map((img, i) => (
