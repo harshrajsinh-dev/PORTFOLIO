@@ -50,7 +50,7 @@ const ProjectCardGSAP = () => {
 
     return (
         <div
-            className="w-[90%] mx-auto h-[260px] flex overflow-hidden rounded-2xl"
+            className="w-[90%] mx-auto h-[260px] flex overflow-hidden rounded-2xl  flex-col md:flex-row bg-red-400 " 
             onMouseLeave={() => animateToIndex(defaultIndex)}
         >
             {images.map((img, i) => (
@@ -58,7 +58,7 @@ const ProjectCardGSAP = () => {
                     key={i}
                     ref={(el) => (itemsRef.current[i] = el)}
                     onMouseEnter={() => animateToIndex(i)}
-                    className="flex-1 relative overflow-hidden cursor-pointer"
+                    className="flex-1 relative overflow-hidden cursor-pointer "
                 >
                     {/* IMAGE */}
                     <img
@@ -68,7 +68,7 @@ const ProjectCardGSAP = () => {
                     />
 
                     {/* CTA OVERLAY */}
-                    <div className="cta absolute inset-0 opacity-0 flex items-center justify-center pointer-events-none">
+                    <div className="cta hidden md:flex absolute inset-0 opacity-0 flex items-center justify-center pointer-events-none">
                         <a href="https://harshrajsinh-two.vercel.app/" className="px-6 py-3 rounded-full opacity-70 bg-blue-700 text-white text-sm font-semibold hover:text-blue-700 hover:border hover:border-blue-700 hover:bg-transparent transition">
                             View Project
                         </a>
