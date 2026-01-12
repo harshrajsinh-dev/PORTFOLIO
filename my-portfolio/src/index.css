@@ -1,7 +1,26 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-display: swap;
+    src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+/* 
+@font-face {
+    font-family: poppinsExtraBold;
+    font-style: normal;
+    font-display: swap;
+    src: url("./assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+} */
+
 * {
     scroll-behavior: smooth !important;
+}
+
+@theme {
+    --font-primary: 'Poppins', sans-serif;
+    /* --font-bold: 'PoppinsExtraBold', sans-serif; */
 }
 
 .marquee {
@@ -52,4 +71,20 @@
     to {
         transform: translateX(0%);
     }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
 }

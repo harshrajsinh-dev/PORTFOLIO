@@ -19,11 +19,20 @@ export default function App() {
       <Cursor />
 
       <main className="max-w-5xl mx-auto p-6 space-y-16">
-        <Hero />
+        <section id='home'>
+          <Hero />
+        </section>
 
-        <Projects />
-        <About />
-        <Contact />
+        <section id="projects">
+          <Projects />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
 
       <Footer />

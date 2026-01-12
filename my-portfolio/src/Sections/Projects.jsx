@@ -1,13 +1,11 @@
-import React from 'react'
-import ProjectCard2 from '../Components/ProjectCard2'
+import ProjectCard2 from "../Components/ProjectCard2";
 
 const Projects = () => {
   return (
-    <div id="projects">
-
+    <section className="scroll-mt-32">
       <ProjectCard2 />
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Projects
+export default Projects;

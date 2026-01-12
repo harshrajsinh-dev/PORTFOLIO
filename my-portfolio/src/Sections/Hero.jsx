@@ -48,7 +48,6 @@ export default function Hero() {
 
     <section
       ref={sectionRef}
-      id="home"
       className="scroll-mt-32 grid md:grid-cols-2 gap-8 items-center py-20"
 
     >
@@ -62,13 +61,16 @@ export default function Hero() {
         </p>
 
         <div className="mt-6 flex gap-3">
-          <button className="outline-none group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-indigo-600 px-6 font-medium text-white duration-500">
-            <div className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">
+          <a href="#projects" className="outline-none group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-indigo-600 px-6 font-medium text-white duration-500">
+            <div
+
+              className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0"
+            >
               View projects
-              </div>
+            </div>
             <div className="absolute translate-x-[150%] opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100">
               <img src={assets.arrowSvg} alt="" />
-            </div></button>
+            </div></a>
           <a
             href="mailto:harshrajsinhgohil8626@gmail.com"
             className=" outline-none border px-4 py-2 rounded flex items-center gap-2 hover:bg-slate-700 hover:text-white transition"
@@ -91,7 +93,7 @@ export default function Hero() {
           ref={imageRef}
           src={assets.portfolioBg}
           alt="Portfolio bg"
-          className="h-full w-full object-contain absolute top-0 left-0 z-10 transition-all duration-200 ease-out"
+          className="h-full w-full object-contain absolute top-0 left-0 z-10 transition-all grayscale-100 hover:grayscale-0 duration-200 ease-out"
         />
         <MarqueeText text={"Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh"} />
         <MarqueeText text={"Web Developer Web Developer Web Developer Web Developer Web Developer Web Developer"} />

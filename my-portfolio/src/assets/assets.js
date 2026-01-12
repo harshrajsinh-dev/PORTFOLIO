@@ -1,4 +1,4 @@
-import portfolioBg from "./images/hero-img2.png";
+import portfolioBg from "./images/portfolio.png";
 import arrowSvg from "./images/arrow.svg"
 import resume from "./files/Harshrajsinhresume.pdf"
 import project_img1 from "./images/project-img-1.png";
