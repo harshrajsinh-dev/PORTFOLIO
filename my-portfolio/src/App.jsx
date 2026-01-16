@@ -6,6 +6,7 @@ import Contact from './Sections/Contact'
 import Footer from './Components/Footer'
 import Cursor from './Components/Cursor'
 import Lenis from 'lenis'
+import Preloader from './Components/Preloader'
 
 export default function App() {
   // Initialize Lenis
@@ -15,6 +16,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
+      <Preloader />
       <Header />
       <Cursor />
 

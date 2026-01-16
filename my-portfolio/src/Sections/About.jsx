@@ -1,16 +1,13 @@
 import React from "react"
+import { assets } from "../assets/assets"
 
 export default function About() {
   const skills = [
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "JavaScript",
-    "React",
-    "Tailwind CSS",
-    "Node.js",
-    "Express",
-    "MongoDB",
+    "Frontend",
+    "Backend",
+    "Databases",
+    "Cloud",
+    "Other",
   ]
 
   const workStack = [
@@ -24,10 +21,7 @@ export default function About() {
     <section className="scroll-mt-32 max-w-5xl mx-auto px-4 py-16">
       <div className="relative">
         {/* Name */}
-        {/* <div className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 animate-fadeIn"> */}
-        <div className="text-2xl md:text-4xl mb-10 bg-gradient-to-r from-black via-slate-800 to-black bg-clip-text text-transparent transition-all duration-500 animate-fadeIn hover:tracking-wide  font-['poppins'] font-[600] uppercase">
-
-
+        <div className="text-2xl md:text-4xl mb-10 bg-gradient-to-r from-black via-slate-800 to-black bg-clip-text text-transparent transition-all duration-500 animate-fadeIn hover:tracking-wide font-['poppins'] font-[600] uppercase">
           Harshrajsinh Y. Gohil
         </div>
 
@@ -42,16 +36,21 @@ export default function About() {
         </p>
 
         {/* Skills */}
-        <div className="mb-16">
-          <h3 className="text-lg font-semibold mb-6 tracking-wide text-slate-900">
-            Skills
-          </h3>
+        <div className="mb-16 ">
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex items-center gap-4">
+            <h3 className="text-2xl font-bold tracking-wide text-slate-900 flex items-center gap-4">
+              Skills
+              {/* 1rem = 16px */}
+            </h3>
+            <img className="h-[2rem] w-[3rem] " src={assets.RightArrow} alt="" />
+          </div>
+
+          <div className="flex flex-wrap gap-3 float-right">
             {skills.map((skill, i) => (
               <span
                 key={i}
-                className="px-4 py-2 text-sm rounded-full bg-slate-100 text-slate-700 hover:bg-black hover:text-white transition"
+                className="px-4 py-2 text-xl font-bold rounded-xl bg-blue-200 text-black/60"
               >
                 {skill}
               </span>
@@ -61,9 +60,13 @@ export default function About() {
 
         {/* Work Stack */}
         <div>
-          <h3 className="text-lg font-semibold mb-6 tracking-wide text-slate-900">
-            Work Stack
-          </h3>
+           <div className="flex items-center gap-4">
+            <h3 className="text-2xl font-bold tracking-wide text-slate-900 flex items-center gap-4">
+              Work Stack
+              {/* 1rem = 16px */}
+            </h3>
+            <img className="h-[2rem] w-[3rem] " src={assets.RightArrow} alt="" />
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {workStack.map((item, i) => (
