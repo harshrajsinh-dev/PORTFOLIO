@@ -10,13 +10,6 @@ export default function About() {
     "Other",
   ]
 
-  const workStack = [
-    { label: "Frontend", value: "React, Bootstrap, Tailwind CSS" },
-    { label: "Backend", value: "Node.js, Express" },
-    { label: "Database", value: "MongoDB" },
-    { label: "Tools", value: "Git, GitHub, VS Code, Figma" },
-  ]
-
   return (
     <section className="scroll-mt-32 max-w-5xl mx-auto px-4 py-16">
       <div className="relative">
@@ -47,42 +40,25 @@ export default function About() {
           </div>
 
           <div className="flex flex-wrap gap-3 float-right">
-            {skills.map((skill, i) => (
-              <span
-                key={i}
-                className="px-4 py-2 text-xl font-bold rounded-xl bg-blue-200 text-black/60"
-              >
-                {skill}
-              </span>
+            {skills.map((skill, i)  => (
+              <>
+                <span
+                  key={i}
+                  className="px-4 py-2 text-l font-bold rounded-xl bg-blue-200 text-black/60 hover:bg-gradient-to-r from-sky-300 to-indigo-600 hover:text-white cursor-pointer "
+                >
+                  {skill}
+
+                </span>
+            </>
             ))}
-          </div>
         </div>
-
-        {/* Work Stack */}
-        <div>
-           <div className="flex items-center gap-4">
-            <h3 className="text-2xl font-bold tracking-wide text-slate-900 flex items-center gap-4">
-              Work Stack
-              {/* 1rem = 16px */}
-            </h3>
-            <img className="h-[2rem] w-[3rem] " src={assets.RightArrow} alt="" />
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {workStack.map((item, i) => (
-              <div
-                key={i}
-                className="p-5 rounded-xl border border-slate-200 hover:border-black transition"
-              >
-                <div className="font-medium text-slate-900 mb-1">
-                  {item.label}
-                </div>
-                <div className="text-slate-600 text-sm">
-                  {item.value}
-                </div>
-              </div>
-            ))}
-          </div>
+        </div>
+        <div className="flex items-center gap-4">
+          <h3 className="text-2xl font-bold tracking-wide text-slate-900 flex items-center gap-4">
+            Work Stack
+            {/* 1rem = 16px */}
+          </h3>
+          <img className="h-[2rem] w-[3rem] " src={assets.RightArrow} alt="" />
         </div>
       </div>
     </section>
