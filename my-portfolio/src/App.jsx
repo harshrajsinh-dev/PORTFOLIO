@@ -23,19 +23,10 @@ export default function App() {
     };
   }, []);
 
-  // Preloader timer
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 5000); // ⏱ 5 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      
-      {loading && <Preloader />}
+
+      {loading && <Preloader setLoading={setLoading} />}
 
       {!loading && (
         <>
