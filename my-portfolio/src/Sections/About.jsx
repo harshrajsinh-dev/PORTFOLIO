@@ -1,14 +1,9 @@
 import React from "react"
 import { assets } from "../assets/assets"
+import Skill from "../Components/skill"
+import WorkStack from "../Components/WorkStack"
 
 export default function About() {
-  const skills = [
-    "Frontend",
-    "Backend",
-    "Databases",
-    "Cloud",
-    "Other",
-  ]
 
   return (
     <section className="scroll-mt-32 max-w-5xl mx-auto px-4 py-16">
@@ -27,40 +22,9 @@ export default function About() {
           focused on building reliable, scalable web applications with clean
           architecture and thoughtful UX.
         </p>
-
-        {/* Skills */}
-        <div className="mb-16 ">
-
-          <div className="flex items-center gap-4">
-            <h3 className="text-2xl font-bold tracking-wide text-slate-900 flex items-center gap-4">
-              Skills
-              {/* 1rem = 16px */}
-            </h3>
-            <img className="h-[2rem] w-[3rem] " src={assets.RightArrow} alt="" />
-          </div>
-
-          <div className="flex flex-wrap gap-3 float-right">
-            {skills.map((skill, i)  => (
-              <>
-                <span
-                  key={i}
-                  className="px-4 py-2 text-l font-bold rounded-xl bg-blue-200 text-black/60 hover:bg-gradient-to-r from-sky-300 to-indigo-600 hover:text-white cursor-pointer "
-                >
-                  {skill}
-
-                </span>
-            </>
-            ))}
-        </div>
-        </div>
-        <div className="flex items-center gap-4">
-          <h3 className="text-2xl font-bold tracking-wide text-slate-900 flex items-center gap-4">
-            Work Stack
-            {/* 1rem = 16px */}
-          </h3>
-          <img className="h-[2rem] w-[3rem] " src={assets.RightArrow} alt="" />
-        </div>
       </div>
+      <Skill />
+      <WorkStack />
     </section>
   )
 }

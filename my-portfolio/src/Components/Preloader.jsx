@@ -60,15 +60,28 @@ const Preloader = ({ setLoading }) => {
                 onClick={() => {
                     setLoading(false);
                 }}
-                className={`${showButton ? "opacity-100 animate-fadeUp" : "opacity-0"} flex  relative items-center justify-center rounded-full p-[2px] bg-gradient-to-r from-sky-300 to-indigo-600`}
+                className={`${showButton ? "opacity-100 animate-fadeUp" : "opacity-0"} flex outline-none relative items-center justify-center rounded-full p-[2px] bg-gradient-to-r from-sky-300 to-indigo-600`}
             >
-                <span className="px-10 py-2 rounded-full bg-[#F9FAF8] text-slate-900 font-semibold">
-                    Start
+                <span
+                    /* Text Gradient CSS */
+                    className="px-10 py-2 rounded-full bg-[#F9FAF8] text-slate-900 font-semibold">
+                    <span className="text-gradient font-bold ">
+                        Start
+                    </span>
                 </span>
             </button>
 
             {/* Animations */}
             <style>{`
+            .text-gradient {
+            color: #b36f14;
+           background: linear-gradient(to right, #7DD3FC, #4F46E5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            }
+
         @keyframes draw-border {
           to {
             stroke-dashoffset: 0;

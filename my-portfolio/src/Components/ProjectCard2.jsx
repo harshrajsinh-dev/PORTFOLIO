@@ -50,7 +50,7 @@ const ProjectCardGSAP = () => {
 
     return (
         <div
-            className="w-full md:w-[90%] mx-auto h-[260px] flex overflow-hidden rounded-2xl  flex-col md:flex-row "
+            className="w-full md:w-[90%] mx-auto h-[260px] flex overflow-hidden rounded-2xl  border-none flex-col md:flex-row "
             onMouseLeave={() => animateToIndex(defaultIndex)}
         >
             {images.map((img, i) => (
