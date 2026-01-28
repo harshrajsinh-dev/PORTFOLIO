@@ -76,7 +76,7 @@ const ProjectCardGSAP = () => {
               href={project.link} 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-full bg-blue-700 text-white text-sm font-semibold hover:bg-transparent hover:text-blue-700 hover:border hover:border-blue-700 transition"
+              className="px-6 py-3 outline-none rounded-full bg-blue-700 text-white text-sm font-semibold hover:bg-transparent hover:text-blue-700 hover:border hover:border-blue-700 transition"
             >
               View Project
             </a>

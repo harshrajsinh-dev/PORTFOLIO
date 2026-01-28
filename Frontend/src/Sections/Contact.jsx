@@ -1,3 +1,5 @@
+import ContactForm from "../Components/ContactForm";
+
 export default function Contact() {
   return (
     <section className="scroll-mt-32 bg-white p-6 rounded-xl shadow min-h-[200vh]">
@@ -13,6 +15,7 @@ export default function Contact() {
       >
         harshrajsinhgohil8626@gmail.com
       </a>
+      <ContactForm  />
     </section>
   )
 }
