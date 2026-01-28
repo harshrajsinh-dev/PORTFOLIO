@@ -78,6 +78,7 @@ export default function Hero() {
             <Mail size={14} />
             Contact
           </a>
+
         </div>
       </motion.div>
 
@@ -96,7 +97,7 @@ export default function Hero() {
           className="h-full w-full object-contain absolute top-0 left-0 z-10 transition-all grayscale-100 hover:grayscale-0 duration-200 ease-out"
         />
         <MarqueeText text={"Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh"} />
-        <MarqueeText text={"Web Developer Web Developer Web Developer Web Developer Web Developer Web Developer"} />
+        <MarqueeText text={"Full Stack Developer Full Stack Developer Full Stack Developer Full Stack Developer"} />
         <MarqueeText text={"Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh Harshrajsinh"} />
       </div>
     </section>

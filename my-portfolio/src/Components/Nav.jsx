@@ -59,7 +59,7 @@ const Nav = () => {
           ref={(el) => (tabsRef.current[i] = el)}
           href={`#${item.toLowerCase()}`}
           onClick={() => setActiveTab(i)}
-          className={`relative z-10 px-5 py-2 font-medium transition-colors
+          className={`outline-none relative z-10 px-5 py-2 font-medium transition-colors
             ${activeTab === i ? "text-black" : "text-black/50 hover:text-black"}
           `}
         >
